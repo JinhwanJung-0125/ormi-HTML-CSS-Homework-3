@@ -1,0 +1,156 @@
+body {
+    background-color: #5B2386;
+}
+.hide-txt {
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+}
+main, section, footer {
+    margin-top: 80px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+section, button {
+    font-family: GmarketSans;
+}
+
+
+
+.main-img, .clock-bg {
+    position: relative;
+}
+.main-img {
+    position: absolute;
+    width: 564px;
+    z-index: 1;
+    margin-top: 75px;
+}
+.clock-bg {
+    width: 261px;
+    z-index: -1;
+}
+
+
+
+.main-paragraph > p {
+    color: #F5DF4D;
+    font-family: EnjoyStories;
+    font-size: 36px;
+}
+
+
+
+.paragraph {
+    position: relative;
+    text-align: center;
+}
+.paragraph img {
+    position: absolute;
+    z-index: -1;
+    width: 493px;
+    margin-top: 48px;
+    margin-left: -246px;
+}
+.paragraph div {
+    position: relative;
+    z-index: 1;
+}
+.paragraph div p {
+    font-size: 18px;
+}
+.paragraph div p strong {
+    font-size: 24px;
+}
+
+
+
+.user-input-area p {
+    font-size: 24px;
+}
+.input-which-type, .input-spend-time {
+    width: 228px;
+    height: 57px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.calc-btn-area, .result-btn-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.calc-btn {
+    background-color: #FCEE21;
+    width: 565px;
+    height: 66px;
+    border: 0;
+    border-radius: 56px;
+    font-size: 24px;
+    color: #5B2386;
+}
+.point-click {
+    width: 64px;
+    vertical-align: bottom;
+}
+
+
+
+
+.result-area p {
+    font-size: 24px;
+}
+.result-which-type, .result-spend-time {
+    font-size: 72px;
+    vertical-align: middle;
+}
+.result-btn, .share-btn {
+    border: 0;
+    border-radius: 56px;
+    font-size: 24px;
+    color: #5B2386;
+}
+.result-btn {
+    background-color: #FCEE21;
+    width: 356px;
+    height: 66px;
+    margin-right: 7px;
+}
+.share-btn {
+    background-color: white;
+    width: 191px;
+    height: 66px;
+    margin-left: 7px;
+}
+
+
+.calc-btn, .result-btn, .share-btn {
+    font-weight: bold;
+}
+
+
+footer img {
+    width: 125px;
+    margin-bottom: 16px;
+}
+footer p {
+    margin: 0;
+}
