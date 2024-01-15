@@ -1,4 +1,6 @@
 const calc_btn = document.querySelector(".calc-btn");
+const result_btn = document.querySelector(".result-btn");
+const close_btn = document.querySelector(".close-btn");
 
 calc_btn.addEventListener("click", () => {
     const input_which_type = document.querySelector(".input-which-type");
@@ -22,4 +24,20 @@ calc_btn.addEventListener("click", () => {
     viewResult(type_value, study_days);
 
     return undefined;
+});
+result_btn.addEventListener("click", () => {
+    const hide_section = document.querySelector(".hide-section");
+
+    if(hide_section === undefined) {
+        return undefined;
+    }
+
+    hide_section.classList.replace("hide-section", "modal");
+
+    return undefined;
+});
+close_btn.addEventListener("click", () => {
+   const modal = document.querySelector(".modal");
+
+   modal.classList.replace("modal", "hide-section");
 });
